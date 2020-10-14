@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/expressao"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/limpar"
+            style="@style/Operators_Button"
+            android:onClick="onClickBotaoLimpar"
+            android:text="@string/limpar" />
+
+        <Button
+            android:id="@+id/divisao"
+            style="@style/Operators_Button"
+            android:onClick="onClickBotaoDivisao"
+            android:text="@string/divisao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_7"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao7"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/btn_8"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao8"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/btn_9"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao9"
+            android:text="@string/_9" />
+
+        <Button
+            android:id="@+id/multiplicacao"
+            style="@style/Operators_Button"
+            android:onClick="onClickBotaoMultiplicacao"
+            android:text="@string/x" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_4"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao4"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/btn_5"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao5"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/btn_6"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao6"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/subtracao"
+            style="@style/Operators_Button"
+            android:onClick="onClickBotaoSubtracao"
+            android:text="@string/subtracao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao1"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao2"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/btn_3"
+            style="@style/Numbers_Button"
+            android:onClick="onClickBotao3"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/soma"
+            style="@style/Operators_Button"
+            android:onClick="onClickAdicao"
+            android:text="@string/soma" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ponto"
+            style="@style/Numbers_Button"
+            android:layout_height="match_parent"
+            android:onClick="onClickBotaoPonto"
+            android:text="@string/ponto" />
+
+        <Button
+            android:id="@+id/btn_0"
+            style="@style/Numbers_Button"
+            android:layout_width="2dp"
+            android:onClick="onClickBotao0"
+            android:text="@string/_0" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="onClickBotaoBackSpace"
+            app:srcCompat="@drawable/backspace" />
+
+        <Button
+            android:id="@+id/igual"
+            style="@style/Operators_Button"
+            android:onClick="onClickIgual"
+            android:text="@string/igual" />
+
+    </LinearLayout>
+
+</LinearLayout>
